@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box
+}
+
+article, aside, footer, header, nav, section, main, html, body, div, a, ol, li, ul, dl, dd, dt, button, select, input, label, form, fieldset, h1, h2, h3, h4, h5, h6, p, pre {
+  padding: 0;
+  margin:  0
+}
+
+button, input, select, textarea, fieldset {
+  outline:   none;
+  border:    none;
+  font-size: 100%
+}
+
+button:focus, input:focus, select:focus, textarea:focus, fieldset:focus, pre:focus {
+  outline: none
+}
+
+article, aside, footer, header, nav, section, main {
+  display: block
+}
+
+ol, li, ul {
+  list-style: none
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor:          pointer
+}
+
+.fx {
+  display: flex
+}
+
+.fx-row {
+  display:        flex;
+  flex-direction: row
+}
+
+.fx-col {
+  display:        flex;
+  flex-direction: column
+}
+
+.right {
+  float: right
+}
+
+.left {
+  float: left
+}
+
+.hidden {
+  display: none
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color:    #666;
+  font:     14px/24px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  padding: 1em;
+}
+
+input {
+  border:        1px solid #ccc;
+  border-radius: 3px;
+  line-height:   2;
+  padding:       0 .5em;
+}
+input:focus {
+  background: lightyellow;
+  box-shadow: inset  0 0 2px #ccc;
+}
+
+label {
+  display: block;
+}
+
+h1,h2,h3 {
+  margin-bottom: 1em;
+  line-height: 2;
+}
+
+button {
+  border-radius: 3px;
+  background:    #f0f0f0;
+  line-height:   2;
+  padding:       0 .5em;
+  color:         #777;
+  cursor:        pointer;
+  transition: all .25s;
+}
+
+.ok { background: forestgreen; color: #fff; }
+.ok:hover { background: darkgreen }
+
+.err { background: transparent; color: tomato }
+.err:hover { background: hotpink; color: #fff; }
+
+.info { background: transparent; color: teal }
+.info:hover { background: deepskyblue; color: #fff; }
+
+
+
+app-student, app-popup {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #ccc;
+  padding: 1em;
+}
+
+app-student {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 1px;
+}
+
+app-popup {
+  display: block;
+  background: aliceblue;
+  position: absolute;
+  z-index: 9;
+  left: 2em;
+  top: 2em;
+  box-shadow: 0 0 0 1px #ccc, 0 -3px 1em rgba(0,0,0,.5);
+}
+
+app-popup:after {
+  content: "▲";
+  position: absolute;
+  top: -1em;
+  left: 2em;
+  color: aliceblue;
+  text-shadow: 0 -3px 0 #bbb;
+  font-size: 1.25em;
+}
+app-popup + button {
+  font-weight: bold;
+  text-transform: uppercase;
+  color:darkgreen;
+}

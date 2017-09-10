@@ -1,0 +1,9 @@
+input {
+  margin-bottom: 1em;
+}
+
+li {
+  display: block;
+  margin: 1px;
+  position: relative;
+}

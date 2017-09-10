@@ -1,0 +1,9 @@
+<ng-content></ng-content>
+
+<form (submit)="add(course.value)">
+  <input type="text" #course placeholder="Add Classes">
+</form>
+
+<nav>
+  <button *ngFor="let name of classes" (click)="del(name)" class="err">✖ {{ name }}</button>
+</nav>
